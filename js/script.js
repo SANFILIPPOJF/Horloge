@@ -25,7 +25,10 @@ console.log(`${angleSEC}°/sec ${angleMIN}°/minute ${angleHR}°/heure`);
 // Déplacer les aiguilles 
 
 function demarrerLaMontre() {
-    AIGUILLEHR.style.transform = `rotate(${impulsions*angleHR}deg) `;
+    AIGUILLEHR.style.transform = `rotate(${angleHR}deg) `;
+    AIGUILLEMIN.style.transform = `rotate(${angleMIN}deg) `;
+    AIGUILLESEC.style.transform = `rotate(${angleSEC}deg) `;
+    
 }
 
 /* fonction qui initialise l'heure actuelle */
