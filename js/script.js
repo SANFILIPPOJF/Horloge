@@ -7,10 +7,10 @@ const AIGUILLESEC = document.querySelector("#second");
 const date = new Date();
 
 // reglage de la fluidité de l'horloge (1000 normal, 100 fluide)
-let delaiCompteur = 100;
+let delaiCompteur = 1000;
 
 //Stocker l'heure , minute , seconde  dans des varaiables
-let heure = ((date.getHours() + 11) % 12 + 1);
+let heure = date.getHours();
 let minute = date.getMinutes();
 let seconde = date.getSeconds();
 console.log(`il est ${heure}h${minute}min${seconde}sec`);
